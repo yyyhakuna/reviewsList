@@ -1,5 +1,5 @@
 'use client'
-import Review from "../components/Review";
+import Review from "./components/Review";
 import Image from 'next/image'
 import { Input, Button } from 'antd'
 import { SunOutlined, MoonOutlined } from "@ant-design/icons";
