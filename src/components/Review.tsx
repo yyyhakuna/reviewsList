@@ -29,7 +29,7 @@ const Review = () => {
     };
   }, [arrow]);
   return (
-    <div className='my-5 ml-28'>
+    <div className='my-5 ml-28 '>
       <div className="flex items-center" >
         <Image src='/avatar.jpg' alt='img' className='rounded-full w-12 h-12 m-2' width={30} height={30} />
         <div className='w-10/12'>

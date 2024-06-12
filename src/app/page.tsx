@@ -1,5 +1,5 @@
 'use client'
-import Review from "../componennts/Review";
+import Review from "../components/Review";
 import Image from 'next/image'
 import { Input, Button } from 'antd'
 import { SunOutlined, MoonOutlined } from "@ant-design/icons";
@@ -8,6 +8,8 @@ export default function Home() {
   const [light, setLight] = useState(false)
   const [isNewest, setIsNewest] = useState(true)
   const changeMode = () => {
+    console.log(light);
+    
     setLight(!light)
   }
 
@@ -15,7 +17,7 @@ export default function Home() {
     setIsNewest(!isNewest)
   }
   return (
-    <div className={light ? "dark:bg-slate-900 dark:text-white  h-full" : 'h-full'}>
+    <div className={light ? " bg-gray-900 bg-opacity-1 text-white h-full" : 'h-full'}>
       <div className="pt-5">
       <div className=" h-10 w-1/3 bg-gray-300 m-auto rounded-full flex items-center justify-center ">
         <div className="bg-gray-200 w-1/4 rounded-lg h-3">
